@@ -18,7 +18,6 @@ li{
 }
 body{
     font-family: 'PT Serif', serif;
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -37,8 +36,16 @@ header{
     background-color: #ffc222;
     padding: 5px 20px 4px 50px;
     font-size: 16px;
+    position: relative;
 }
-.header__btn:after{
+.header__btn:before{
+    content: "\f0b1";
+    font-family: 'icomoon', serif;
+    position: absolute;
+    left: 22px;
+    color: #1b1b1b;
+}
+.header__contacts:after{
     content: "";
     clear: both;
     display:block;
@@ -48,12 +55,50 @@ header{
     color: #cbcacb;
     letter-spacing: 0.25px;
     line-height: 45px;
-
+    position: relative;
 }
 .header__phone{
     padding-left: 20px;
     padding-right: 30px;
 }
+.header__phone:before{
+    content: "\f095";
+    font-family: 'icomoon', serif;
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
 .header__email{
     padding-left: 24px;
+}
+.header__email:before{
+    content: "\f0e0";
+    font-family: 'icomoon', serif;
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+.header__content{
+    padding: 34px 0 23px;
+}
+.header__content-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a{
+    color: #323232;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid transparent;
+    padding: 0 16px;
+    transition: all .3s;
+}
+.menu a:hover{
+    border-color: #ffc222;
+}
+.menu li + li{
+    padding-left: 10px;
 }
