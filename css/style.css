@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+/* Отмена надстроек списков и ссылок */
 a{
     text-decoration: none;
     display: inline-block;
@@ -11,6 +12,8 @@ li{
     margin: 0;
     padding: 0;
 }
+
+/* Надстройка верхней панели */
 .container{
     max-width: 1170px;
     margin: 0 auto;
@@ -87,6 +90,7 @@ header{
 }
 
 
+/* Надстройка меню */
 .menu li{
     display: inline-block;
 }
@@ -108,7 +112,7 @@ header{
     display: none;
 }
 
-
+/* Надстройка содержания слайдера */
 .slider{
     background-image: url(../img/slider-background.jpg);
     background-repeat: no-repeat;
@@ -164,6 +168,7 @@ header{
     position: relative;
 }
 
+/* Надстройка кнопочек слайдинга */
 .slick-btn{
     position: absolute;
     top: 85%;
@@ -198,5 +203,37 @@ header{
 }
 .slick-prev{
     left: 0;
+
+}
+
+
+.about{
+    padding: 50px 0 30px;
+}
+.about__top{
+    display: flex;
+    justify-content: space-between;
+}
+.about__title-box{
+    max-width: 520px;
+    padding-left: 140px;
+    position: relative;
+}
+.about__title-box:before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #ffc222;
+    left: 0;
+}
+.about-title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #212020;
+    font-family: 'Roboto', sans-serif;
+}
+.about-text{
 
 }
