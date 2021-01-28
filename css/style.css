@@ -620,9 +620,9 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.form__inner .header__btn{
-    padding-top: 14px;
-    left: 0;
+.footer__inner .header__btn{
+    float: none;
+    display: inline-block;
 }
 .footer__map{
     padding-top: 10px;
@@ -647,6 +647,7 @@ header{
 }
 .footer__info{
     max-width: 360px;
+
 }
 .footer__list li{
     margin-top: 10px;
@@ -659,23 +660,24 @@ header{
     font-family: 'Roboto', sans-serif; 
     font-weight: 400;
     padding-left: 33px;
+    position: relative;
 }
 .footer__list a:before{
     font-family: 'icomoon', serif;
     position: absolute;
-
+    left: 0;
     color: #ffc222;
 }
 .footer__list .footer__phone:before{
     content: "\f095";
-    left: 118px;
+    left: 3px;
 }
 .footer__list .footer__mail:before{
     content: "\f0e0";
-    left: 115px;
+    left: 0;
 }
 .footer__list .footer__address:before{
-    left: 118px;
+    left: 3px;
     content: "\f041";
 }
 .footer-copy{
@@ -687,4 +689,16 @@ header{
     font-size: 12px;
     padding: 8px 0;
     font-weight: 400;
+}
+
+#modal input{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    outline:  none;
+    border: 1px solid #e6e6e6;
+    padding: 0 10px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
