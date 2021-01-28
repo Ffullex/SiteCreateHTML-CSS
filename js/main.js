@@ -8,6 +8,9 @@ $(function(){
 
     $('select').styler();
 
+    $('.header__btn-menu').on('click',function(){
+        $('.menu ul').slideToggle();
+    })
 
 /*    $('.news__slider-inner').slick({
         nextArrow: '<button type="button" class="slick-btn slick-next"></button>',

@@ -627,12 +627,12 @@ header{
 .footer__map{
     padding-top: 10px;
     max-width: 630px;
+    width: 100%;
 }
-/*
+
 .footer__map iframe{
     width: 100%;
-    height: 250px;
-}*/
+}
 .footer__title{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -701,4 +701,14 @@ header{
     padding: 0 10px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+}
+#modal input[type="submit"]{
+    background-color: #ffc222;
+    border: none;
+}
+
+
+.header__btn-menu{
+    display: none;
+    font-size: 28px;
 }
