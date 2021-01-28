@@ -210,19 +210,24 @@ header{
 .services{
     padding: 50px 0 30px;
 }
-.services__top{
+.services__top,
+.news__top{
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
 }
+
 .form__title-box,
-.services__title-box{
+.services__title-box,
+.news__title-box{
     max-width: 520px;
     padding-left: 140px;
     position: relative;
 }
+
 .form__title-box:before,
-.services__title-box:before{
+.services__title-box:before,
+.news__title-box:before{
     content: "";
     position: absolute;
     width: 100px;
@@ -231,19 +236,25 @@ header{
     left: 0;
     top: 11px;
 }
+
 .form__title,
-.services__title{
+.services__title,
+.news__title{
     font-size: 24px;
     font-weight: 500;
     line-height: 24px;
     color: #212020;
     font-family: 'Roboto', sans-serif;
 }
+
 .form__text,
-.services__text{
+.services__text,
+.news__text{
     letter-spacing: 0.1px;
 }
-.services__btn a{
+
+.services__btn a,
+.news__btn{
     color: #373636;
     line-height: 24px;
     letter-spacing: 0.25px;
@@ -501,4 +512,21 @@ header{
     line-height: 24px;
     color: #d3d2d2;
     letter-spacing: 0.1px;
+}
+
+
+.news{
+    padding: 50px 0 110px;
+}
+.news__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.news__slider{
+    max-width: 550px;
+    width: 100%;
+}
+.news__blog{
+    max-width: 260px;
+    width: 100%;
 }
