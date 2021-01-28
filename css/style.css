@@ -326,7 +326,7 @@ header{
     color: #000000;
 }
 
-
+/* Надстройки форм. */
 .form{
     padding: 30px;
 }
@@ -449,4 +449,56 @@ header{
     background-color: transparent;
     color: #000000;
     float: right;
+}
+
+/* Надстройки преимуществ */
+.advantages{
+    padding: 50px 0 40px;
+    background-image: url('../img/slider-background3.jpg ');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+    background-size: cover;
+}
+.advantages__inner{
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.advantages-item{
+    max-width: 360px;
+    padding: 0 20px;
+}
+.advantages__title{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 60px 0 15px;
+    position: relative;
+}
+.advantages__title:before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffc222;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.advantages__title:after{
+    content: '\f00c';
+    font-family: 'icomoon', serif;
+    font-size: 14px;
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.advantages__text{
+    line-height: 24px;
+    color: #d3d2d2;
+    letter-spacing: 0.1px;
 }
